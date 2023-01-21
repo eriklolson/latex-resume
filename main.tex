@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Erik}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Olson}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Web App Architect} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	{5535 SE Madison St}\\
+	{503.975.1208}\\
+	{\href{mailto:eriklolson@zohomail.com}{eriklolson@zohomail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	{\href{https://linkedin.com/in/erik-olson-9b6bb7191}{linkedin.com/in/erik-olson-9b6bb7191}}\\
+	{\href{https://github.com/eriklolson}{github.com/eriklolson}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Objectives}
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+
+ % Required for vertically aligning minipages
+ A position in the field of softwear development with special interests in web applications  programming, and data management.
+ 
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Python}{60}
+		\baritem{SQL}{70}
+		\baritem{JavaScript}{60}
+		\baritem{Fask}{100}
+		\baritem{SASS/LESS}{70}
+		\baritem{Tailwind}{70}
+		\baritem{Git}{40}
+		\baritem{HTML}{60}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	%\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2018 -- 2020}
+		{Writing Coach}
+		{Tutor.com}
+		{I assisted clients in all stages of the writing process, from
+		brainstorming and outlining, drafting and fine-tuning. Communicating clearly within time constraints, I ensure every session satisfied 					particular needs and learning styles of clients and met the requirements of their assignments. \\  \texttt{Linux}}
+
+	\entry
+		{2017 -- 2018}
+		{Career Assistance Mentor}
+		{Portland Public Schools}
+		{Enriched classroom by forging positive mentoring relationships with
+		students and by connecting classroom content to my personal
+		experience as a college student.
+		Created and facilitated a series of in-class workshops to help students embrace a 			college identity.
+		Supported teachers in organizing and carrying out meaningful college and
+		career exposure activities, from field trips to discussion panels, guest
+		speakers to writing exercises.
+		\\ \texttt{MS Word}\slashsep\texttt{Google Sheets}}
+		
+	\entry
+		{2006 -- 2009}
+		{Web Editor}
+		{Moda Nova}
+		{Edited and uploaded pictures from company database to website as batch file manager. Performed data loads and routine updates on an ongoing basis. 
+		Performed updates to the SQL system as assigned by management.		
+		Wrote SQL queries in MYSQL Server 2005.
+		\\ \texttt{MYSQL}\slashsep\texttt{HTML}\slashsep\texttt{CSS}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2011 -- 20016}
+		{Bachelor of Arts - English Language And Literature}
+		{Portland State University}
+		
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Certificates
+%----------------------------------------------------------------------------------------
+
+\cvsect{Certificates}
+
+\begin{entrylist}
+	\entry
+		{2021}
+		{CS50x}
+		{Harvard}
+		
+	\entry
+		{2020}
+		{Fundamentals of Technical Writing}
+		{Portland State University}
+		
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{Python}  proficient\\
+	\textbf{SQL} - proficient\\
+	\textbf{HTML}  proficient\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	I love... \lorem
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	I help... \lorem
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
