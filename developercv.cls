@@ -42,6 +42,8 @@
 
 \usepackage{moresize} % Provides more font size commands (\HUGE and \ssmall)
 \usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{changepage}% http://ctan.org/pkg/changepage
+\usepackage{multicol}
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT
 %----------------------------------------------------------------------------------------
