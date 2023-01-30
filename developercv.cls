@@ -44,6 +44,10 @@
 \usepackage{tabularx,colortbl} % Advanced table configurations
 \usepackage{changepage}% http://ctan.org/pkg/changepage
 \usepackage{multicol}
+
+\RequirePackage{xkeyval} % key-value macros
+\RequirePackage{etoolbox} % robust commands, macros, booleans, tests
+
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT
 %----------------------------------------------------------------------------------------
@@ -175,6 +179,60 @@
 	\vspace{\baselineskip} % Whitespace before the section title
 	\colorbox{black}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
 }
+
+
+%%--------------------------------------------------------------------
+%% SUBSECTION
+%%----------------------------------------------------------
+
+%% Subsection Environment
+%% defines subsection environment, contains formatted subheaders and resumeitems
+%% [4]: {subHeader} {subSubHeader} {subDate} {subLocation}
+\newenvironment*{cvsubsection}[4]{%
+  \notblank{#4}{%
+    \item[\subheaderform#1]\hfill{\subdateform#2}\\
+    {\subsubheaderform#3}\hfill{\sublocationform#4}%
+  }{%
+    \notblank{#3}{%
+      \item[\subheaderform#1]|\enspace{\subsubheaderform#2}\hfill{\subdateform#3}%
+    }{%
+      \item[\subheaderform#1]\hfill{\subdateform#2}%
+    }%
+  }\subheaderskip%
+  \begin{itemize}%
+}{%
+  \end{itemize}%
+}
+
+%%--------------------------------------------------------------------
+%% LIST ITEMS
+%%----------------------------------------------------------
+
+%% List Format Macros
+\newrobustcmd*{\listitem}[1]{\listitemform\item#1}
+\newrobustcmd*{\descitem}[1]{\descitemform\item#1}
+
+%%--------------------------------------------------------------------
+
+%%--------------------------------------------------------------------
+%% LIST ITEMS
+%%----------------------------------------------------------
+
+%% List Format Macros
+%\newrobustcmd*{\listitem}[1]{\listitemform\item#1}
+%\newrobustcmd*{\descitem}[1]{\descitemform\item#1}
+
+%%--------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	 CV LIST
+%----------------------------------------------------------------------------------------
+
+% renders a standard latex list but abstracts away the environment definition (begin/end)
+\newcommand{\cvlist}[1] {
+	\begin{itemize}{#1}\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	ENTRY LIST
