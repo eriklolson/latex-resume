@@ -1,31 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Developer CV
-% LaTeX Template
-% Version 1.0 (28/1/19)
-%
-% This template originates from:
-% http://www.LaTeXTemplates.com
-%
-% Authors:
-% Jan Vorisek (jan@vorisek.me)
-% Based on a template by Jan Küster (info@jankuester.com)
-% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
-%
-% License:
-% The MIT License (see included LICENSE file)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
-
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 %----------------------------------------------------------------------------------------
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -48,18 +28,18 @@
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	{5535 SE Madison St}\\
-	{503.975.1208}\\
-	{\href{mailto:eriklolson@zohomail.com}{eriklolson@zohomail.com}}\\	
+	{\faMapMarker} {5535 SE Madison St}\\
+	\faIcon{phone} {503.975.1208}\\
+	\faIcon{at} {\href{mailto:eriklolson@zohomail.com}{eriklolson@zohomail.com}}\\	
 \end{minipage}
 \begin{minipage}[t]{0.375\textwidth} % 27.5% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	{\href{https://linkedin.com/in/erik-olson-9b6bb7191}{linkedin.com/in/erik-olson-9b6bb7191}}\\
-	{\href{https://Github.com/eriklolson}{Github.com/eriklolson}}\\
-	{\href{https://bitbucket.org/cobrasolutions/}{bitbucket.org/cobrasolutions}}\\
+	\faIcon{linkedin} {\href{https://linkedin.com/in/erik-olson-9b6bb7191}{linkedin.com/in/erik-olson-9b6bb7191}}\\
+	\faIcon{github} {\href{https://Github.com/eriklolson}{Github.com/eriklolson}}\\
+	\faIcon{bitbucket} {\href{https://bitbucket.org/cobrasolutions/}{bitbucket.org/cobrasolutions}}\\
 \end{minipage}
 
 \vspace{0.5cm}
@@ -78,11 +58,11 @@
 \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\begin{barchart}{5.5}
-		\baritem{SQL/PostgreSQL}{60}
+		\baritem{SQL}{60}
 		\baritem{Python}{70}
 		\baritem{Git}{68}
 		\baritem{Flask}{95}
-		\baritem{HTML/CSS/SCSS}{90}
+		\baritem{HTML/CSS}{90}
 		\baritem{Terraform}{47}
 		\baritem{JavaScript}{60}
 		\baritem{TailwindCSS}{95}
@@ -99,7 +79,6 @@
 %----------------------------------------------------------------------------------------
 
 \cvsect{Experience}
-
 \begin{entrylist}
 		\entry
 		{2021 -- present}
@@ -110,7 +89,6 @@
 		website; configured Gunicorn WSGI server and Nginx reverse proxy. Configured DNS settings and secured website with 
 		Certbot. Implemented and enforced Git-Flow process for local and remote applications, including creating, deleting, and merging release and 
 		feature branches with Git-Flow CLI. Used JIRA as bug tracking system to track and maintain history of bugs/issues on everyday basis. \\
-		
 		
 		Created eCommerce website with a Python-Flask web app—{\href{https://Github.com/eriklolson/flask-wineshop}{\itshape flask-wineshop}}—
 		featuring mock wine shop inventory. funcionalities of website include user account management, product search and views, shopping cart, 
@@ -160,7 +138,7 @@
 \begin{entrylist}
 	\entry
 		{2021}
-		{CS50x Introduction to Computer Science and Programming}
+		{CS50x Introduction to Computer Science \& Programming}
 		{Harvard/edX | Online/Cambridge, MA}
 		
 	\entry
@@ -181,19 +159,19 @@
 \cvsect{Projects}
 
 \begin{minipage}[t]{0.45\textwidth}
-	{\href{https://slowwinewest.com}{\bfseries slowwinewest.com}} | {2022-present}
+	 {\faGlobe} {\href{https://slowwinewest.com}{\bfseries slowwinewest.com}} | {2022-present}
 		\begin{itemize}
-   			\item {\href{https://bitbucket.org/cobrasolutions/slow-wine-west}{bitbucket.org/cobrasolutions/slow-wine-west}}
+   			\item[]\faIcon{bitbucket} {\href{https://bitbucket.org/cobrasolutions/slow-wine-west}{bitbucket.org/cobrasolutions/slow-wine-west}}
 		\end{itemize}
 \end{minipage}%
 \hfill
-\begin{minipage}[t]{0.45\textwidth}
-		{\href{https://flaskwineshop.com}{\bfseries flaskwineshop.com}} | {2021}
-            \begin{itemize}
-                \item {\href{https://Github.com/eriklolson/flask-wineshop}{Github.com/eriklolson/flask-wineshop}}
-                \item {\href{https://Github.com/eriklolson/python-wine-scraper}{Github.com/eriklolson/python-wine-scraper}}
-                \item {\href{https://bitbucket.org/cobrasolutions/terraform}{bitbucket.org/cobrasolutions/terraform}}
-            \end{itemize}
+\begin{minipage}[t]{0.55\textwidth}
+	{\faGlobe} {\href{https://flaskwineshop.com}{\bfseries flaskwineshop.com}} | {2021}
+    	\begin{itemize}
+        	\item[]\faIcon{github} {\href{https://Github.com/eriklolson/flask-wineshop}{Github.com/eriklolson/flask-wineshop}}
+            \item[]\faIcon{github} {\href{https://Github.com/eriklolson/python-wine-scraper}{Github.com/eriklolson/python-wine-scraper}}
+            \item[]\faIcon{bitbucket} {\href{https://bitbucket.org/cobrasolutions/terraform}{bitbucket.org/cobrasolutions/terraform}}
+        \end{itemize}
             
 \end{minipage}%
 	\vspace{44pt}

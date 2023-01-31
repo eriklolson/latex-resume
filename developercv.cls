@@ -80,7 +80,7 @@
 
 %------------------------------------------------
 
-%\usepackage{fontawesome} % Required for FontAwesome icons
+\usepackage{fontawesome5} % Required for FontAwesome icons
 
 % Command to output an icon in a black square box with text to the right
 \newcommand{\icon}[3]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
