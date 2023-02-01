@@ -1,0 +1,212 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Erik}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Olson}}}}} % Last name
+	
+	\vspace{5pt}
+	
+	{\huge Full-Stack Web Developer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	{\faMapMarker} {5535 SE Madison St}\\
+	\faIcon{phone} {503.975.1208}\\
+	\faIcon{at} {\href{mailto:eriklolson@zohomail.com}{eriklolson@zohomail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.375\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\faIcon{linkedin} {\href{https://Linkedin.com/in/erik-olson-9b6bb7191}{Linkedin.com/in/erik-olson-9b6bb7191}}\\
+	\faIcon{github} {\href{https://Github.com/eriklolson}{Github.com/eriklolson}}\\
+	\faIcon{bitbucket} {\href{https://Bitbucket.org/cobrasolutions/}{Bitbucket.org/cobrasolutions}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Objectives}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+ % Required for vertically aligning minipages
+ A position in the field of softwear development with special interests in web applications programming and data management.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{SQL}{60}
+		\baritem{Python}{70}
+		\baritem{Git}{68}
+		\baritem{Flask}{95}
+		\baritem{HTML/CSS}{90}
+		\baritem{Terraform}{47}
+		\baritem{JavaScript}{60}
+		\baritem{TailwindCSS}{95}
+		\baritem{Node JS}{65}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	%\bubbles{5/Eclipse, 6/Git, 4/Office, 3/Inkscape, 3/Blender}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+\begin{entrylist}
+		\entry
+		{2021 -- present}
+		{Full-Stack Web Developer}
+		{Slow Wine West}
+		{Created back-end PostgreSQL database to store blog entries and user data. Developed webpages with TailwindCSS and
+		Jinja templating. Created secure user login and register functions. Created Ubuntu Virtual Server from scratch to host
+		website; configured Gunicorn WSGI server and Nginx reverse proxy. Configured DNS settings and secured website with 
+		Certbot. Implemented and enforced Git-Flow process for local and remote applications, including creating, deleting, and merging release and 
+		feature branches with Git-Flow CLI. Used JIRA as bug tracking system to track and maintain history of bugs/issues on everyday basis. \\
+		
+		Created eCommerce website with a Python-Flask web app—{\href{https://Github.com/eriklolson/flask-wineshop}{\itshape flask-wineshop}}—
+		featuring mock wine shop inventory. funcionalities of website include user account management, product search and views, shopping cart, 
+		order entry, and account history. Wrote web scraper—{\href{https://Github.com/eriklolson/python-wine-scraper}{\itshape python-wine-scraper}}
+		—that supplied the back-end database with mock wine products. Used Terraform to make cloud-native PostgreSQL database in AWS Virtual Private 
+		Cloud.\\ \texttt{Flask}\slashsep\texttt{Python}\slashsep\texttt{Jinja2}\slashsep\texttt{TailwindCSS}
+		\slashsep\texttt{Node JS}\slashsep\texttt{SQLAlchemy}\slashsep\texttt{KVM/QEMU}}
+	\entry
+		{2020 -- 2021}
+		{Online English Second Language Teacher}
+		{VIPKid}
+		{Taught one-on-one online English classes with VIPKID, an ESL Tutoring company for children in China. Creatively engage students to learn in 		
+		a fast-paced online environment by using Total Physical Response and modeling. Used Lightworks softwear to edit educational videos.
+		\\ \texttt{Linux}\slashsep\texttt{Zoom}\slashsep\texttt{Lightworks}}
+	\entry
+		{2018 -- 2020}
+		{Writing Coach}
+		{Tutor.com}
+		{I assisted clients in all stages of the writing process, from
+		brainstorming and outlining, drafting and fine-tuning. Communicating clearly
+		within time constraints, I ensure every session satisfied particular needs and
+		learning styles of clients and met the requirements of their assignments.
+		\\ \texttt{Windows}\slashsep\texttt{ Micorsoft Excel}}
+	\entry
+		{2017 -- 2018}
+		{Career Assistance Mentor}
+		{Portland Public Schools}
+		{Supported teachers in organizing and carrying out meaningful college and
+		career exposure activities, from field trips to discussion panels, guest
+		speakers to writing exercises.
+		\\ \texttt{MS Word}\slashsep\texttt{Google Sheets}}
+	\entry
+		{2006 -- 2009}
+		{Web Editor}
+		{Moda Nova}
+		{Edited and uploaded pictures from company database to website as batch file manager. Performed data loads and routine updates on an ongoing
+		basis. Performed updates to the SQL system as assigned by management. Wrote SQL queries in MYSQL Server 2005.
+		\\ \texttt{MYSQL}\slashsep\texttt{HTML}\slashsep\texttt{CSS}}
+\end{entrylist}
+	\vspace{56pt}
+	
+%----------------------------------------------------------------------------------------
+%	EDUCATION/CERTIFICATES
+%----------------------------------------------------------------------------------------
+\cvsect{Education \& Certificates}
+
+\begin{entrylist}
+	\entry
+		{2021}
+		{CS50x Introduction to Computer Science \& Programming}
+		{Harvard/edX | Online/Cambridge, MA}
+		
+	\entry
+		{2020}
+		{Fundamentals of Technical Writing}
+		{Portland State University | Portland, OR}
+
+	\entry
+		{2011 -- 20016}
+		{Bachelor of Arts - English Language and Literature}
+		{Portland State University | Portland, OR}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Project Links
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+
+\begin{minipage}[t]{0.45\textwidth}
+	 {\faGlobe} {\href{https://slowwinewest.com}{\bfseries slowwinewest.com}} | {2022-present}
+		\begin{itemize}
+   			\item[]\faIcon{bitbucket} {\href{https://Bitbucket.org/cobrasolutions/slow-wine-west}{Bitbucket.org/cobrasolutions/slow-wine-west}}
+		\end{itemize}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.55\textwidth}
+	{\faGlobe} {\href{https://flaskwineshop.com}{\bfseries flaskwineshop.com}} | {2021}
+    	\begin{itemize}
+        	\item[]\faIcon{github} {\href{https://Github.com/eriklolson/flask-wineshop}{Github.com/eriklolson/flask-wineshop}}
+            \item[]\faIcon{github} {\href{https://Github.com/eriklolson/python-wine-scraper}{Github.com/eriklolson/python-wine-scraper}}
+            \item[]\faIcon{bitbucket} {\href{https://Bitbucket.org/cobrasolutions/terraform}{Bitbucket.org/cobrasolutions/terraform}}
+        \end{itemize}
+            
+\end{minipage}%
+	\vspace{44pt}
+	
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Languages}
+	
+	\textbf{Python} - proficient\\
+	\textbf{SQL} - proficient\\
+	\textbf{JavaScript} - competent\\
+	\textbf{CSS/SCSS} - proficient\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Environments}
+	
+	\textbf{Unix/Linux command line} - proficient\\
+	\textbf{Anaconda} - proficient\\
+	\textbf{JIRA} - proficient\\
+	\textbf{Git} - proficient\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Infrastructure}
+	
+	\textbf{Docker} - competent\\
+	\textbf{Nginx} - proficient\\
+	\textbf{AWS cloud} - competent\\
+	\textbf{Terraform} - competent\\
+\end{minipage}
+%----------------------------------------------------------------------------------------
+\end{document}
