@@ -1,0 +1,94 @@
+% Created by Huu Duc Nguyen
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{curriculum-vitae}[2022/27/04]
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\RequirePackage[utf8]{inputenc}    			% Input-encoding
+\RequirePackage{xstring, xifthen}			% provides \isempty test
+\RequirePackage{fontawesome5, moresize}		% Fonts
+\RequirePackage{fontenc, fontspec}			% Fonts
+\setmonofont{BebasKai}[
+	Path=./,
+	Extension = .otf,
+	UprightFont=*-Regular,
+]
+\setmainfont{Roboto-Regular}[
+	Path=./,
+	Extension = .otf,
+]
+\RequirePackage[a4paper]{geometry}						% define page styles using geometry
+\geometry{top=1.4cm, bottom=1.4cm, left=1cm, right=1cm}	% remove all possible margins
+\RequirePackage{color}
+\definecolor{red}{RGB}{30, 58, 138}
+\definecolor{black}{RGB}{23, 23, 23}
+\definecolor{gray}{RGB}{147, 147, 147}
+\RequirePackage[pdfusetitle,
+	hidelinks,		
+	pdfborder		={0 0 0},		% Avoid borders in PDF
+	linkcolor		= red,			% simple internal links
+	colorlinks		= true,			% Set text color
+	anchorcolor		= black,		% Anchor text
+	menucolor		= black,		% Acrobat-menu
+	urlcolor		= red			% Reference to internet links 
+]{hyperref}							% Hyperlink
+\RequirePackage{fancyhdr, lastpage}	% Paging style
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\textbf{\thepage \ / \pageref{LastPage}}}
+\RequirePackage{setspace}			% Varying line spacing
+\RequirePackage[none]{hyphenat}		% No word break with hyphen
+
+%	SUPPORTING FUNCTIONS
+\def\hrulefill{\leavevmode\leaders\hrule height 1.4pt\hfill\kern\z@}
+\def\firstLetter#1#2@{#1}
+\def\secondLetter#1#2@{#2}
+\newcommand\tab[1][.9cm]{\hspace*{#1}}
+\newcommand{\cvContactSpace}{\quad\textcolor{red}{$\bullet$}\quad}
+\newcommand{\cvContactSep}{\textcolor{red}{\textbf{|}} }
+%============================================================================%
+%	CV COMMANDS
+%============================================================================%
+%	SETTING UP INFO
+\newcommand*{\setname}[2]{\def\@firstname{#1}\def\@lastname{#2}}
+\newcommand*{\setaddress}[1]{\def\@address{#1}}
+\newcommand*{\setmobile}[1]{\def\@mobile{#1}}
+\newcommand*{\setposition}[1]{\def\@position{#1}}
+\newcommand*{\setmail}[1]{\def\@mail{#1}}
+\newcommand*{\setlinkedin}[1]{\def\@linkedin{#1}}
+\newcommand*{\setgithub}[1]{\def\@github{#1}}
+\newcommand*{\setbitbucket}[1]{\def\@bitbucket{#1}}
+%	CV TITLE
+\newcommand{\cvtitle}[1]{
+	\begin{center}
+		{\fontsize{27}{0}\selectfont
+			\texttt{\@firstname \ {\color{gray}{\@lastname}} }
+			\textcolor{red}{ \textbf{#1}}}\\
+		{\fontsize{12}{0}\selectfont
+			\cvContactSpace \href{mailto:\@mail}{\faIcon{envelope} \@mail}
+			\cvContactSpace  \faIcon{map} \@address
+			\cvContactSpace \faIcon{phone} \@mobile\\
+   			\cvContactSpace \href{\@linkedin}{\faIcon{linkedin} LinkedIn}
+			\cvContactSpace \href{\@github}{\faIcon{github} GitHub}
+			\cvContactSpace \href{\@bitbucket}{\faIcon{bitbucket} Bitbucket}\\~{\Large \\~\\}
+            }
+	\end{center}
+}
+%	CV SECTION
+\newcommand{\cvSection}[1]{
+	
+	{\textcolor{red}{\texttt{\Huge{\firstLetter#1@}\LARGE{\secondLetter#1@}} \hrulefill}}\\~\\
+}
+%	 CV Block with date/time
+\newcommand{\CVBlockWithTime}[5]{
+	\tab \texttt{\Large \textbf{#1}} \hfill \textbf{\large #2}\\
+	\tab \textbf{#3} \hfill #4\\
+	\ifthenelse{\isempty{#5}}{\\}{\tab \begin{minipage}{14cm}#5\end{minipage}\\~\\}
+}
+%	 CV Text block
+\newcommand{\CVTextBlock}[1]{\tab {\large \begin{minipage}{18cm}#1\end{minipage}}\\~\\}
+
+%	 Lists
+\usepackage{enumitem}
+\setlist{nosep}
