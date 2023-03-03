@@ -6,8 +6,9 @@
     draft = false,
     twoside = false,
 ]{article}
-
 \usepackage{resume-styles}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{light-bluey}{RGB}{86, 114, 196}
 
 \begin{document}
 	%	Basic information	
@@ -27,7 +28,8 @@
 	%	Summary / Objectives
 	%----------------------------------------------------------------------------------------
 	\cvSection{Career Profile}
-	\CVTextBlock{Junior Python Web Developer with a strong foundation in Python programming, experience in building and deploying web applications using the Flask 						framework. Skilled in creating clean and maintainable code, working with relational databases, and integrating RESTful APIs. Passionate about developing innovative 		solutions to real-world problems and eager to continue learning and growing in a fast-paced environment.}
+	\CVTextBlock{Junior Python Web Developer with a strong foundation in Python programming, experience in building and deploying web applications using the Flask 						framework. Skilled in creating clean and maintainable code, working with relational databases, and integrating RESTful APIs. Passionate about developing innovative 		solutions to real-world problems and eager to continue learning and growing in a fast-paced environment.
+		This text will appear green-colored}
 %---------------------------------------------------------------------------------------
 	%	Core Competencies
 	%----------------------------------------------------------------------------------------
@@ -65,10 +67,11 @@
       \item Debugged and solved production issues, improving application performance and stability
    \end{itemize}
    \begin{description}
-    \-\hspace{-.45cm}\textbf{Key Achievements:}
+   \textcolor{light-bluey}
+    {\-\hspace{-.45cm}\textbf {Key Achievements:}}
    \end{description}
    \begin{itemize}
-      \item  \textbf{Created} a back-end PostgreSQL database to store blog entries and user data
+      \item Created a back-end PostgreSQL database to store blog entries and user data
       \item Developed webpages using TailwindCSS and Jinja templating
       \item Implemented secure user login and register functions
       \item Created an Ubuntu Virtual Server from scratch to host the website and configured Gunicorn WSGI server and Nginx reverse proxy
@@ -81,7 +84,6 @@
       \item Used Terraform to create a cloud-native Postgres database in an AWS Virtual Private Cloud
     \end{itemize}
     }
-    
 	\CVBlockWithTime{ONLINE ENGLISH SECOND LANGUAGE TEACHER}{VIPKID}{}{2020 – 2021}
 	{
     \begin{itemize}
@@ -93,7 +95,6 @@
       \item Demonstrated excellent communication, interpersonal, and organizational skills, fostering positive and supportive relationships with students and colleagues 
     \end{itemize}
     }
-	
 	%---------------------------------------------------------------------------------------
 	%	Other Experiences 
 	%---------------------------------------------------------------------------------------
