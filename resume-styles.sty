@@ -28,7 +28,7 @@
 \RequirePackage[pdfusetitle,
 	hidelinks,		
 	pdfborder		={0 0 0},		% Avoid borders in PDF
-	linkcolor		= black,			% simple internal links
+	linkcolor		= black,		% simple internal links
 	colorlinks		= true,			% Set text color
 	anchorcolor		= black,		% Anchor text
 	menucolor		= black,		% Acrobat-menu
@@ -79,11 +79,16 @@
 }
 %	CV SECTION
 \newcommand{\cvSection}[1]{
-	
 	{\textcolor{dark-blue}{\texttt{\Huge{\firstLetter#1@}\LARGE{\secondLetter#1@}} \hrulefill}}\\~\\
 }
 %	 CV Block with date/time
 \newcommand{\CVBlockWithTime}[5]{
+	\tab \texttt{\Large {\textcolor{blue}{\textbf{#1}}}} \hfill \textbf{\large #2}\\
+	\tab \textbf{#3} \hfill #4\\
+	\ifthenelse{\isempty{#5}}{\\}{\tab \begin{minipage}{14cm}#5\end{minipage}\\~\\}
+}
+%	Education Section
+\newcommand{\CVBlockEducation}[5]{
 	\tab \texttt{\Large \textbf{#1}} \hfill \textbf{\large #2}\\
 	\tab \textbf{#3} \hfill #4\\
 	\ifthenelse{\isempty{#5}}{\\}{\tab \begin{minipage}{14cm}#5\end{minipage}\\~\\}
