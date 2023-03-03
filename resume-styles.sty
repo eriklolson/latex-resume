@@ -64,7 +64,7 @@
 %	CV TITLE
 \newcommand{\cvtitle}[1]{
 	\begin{center}
-		{\fontsize{37}{0}\selectfont
+		{\fontsize{38}{0}\selectfont
 			\texttt{\@firstname \ {\color{dark-blue}{\@lastname}} }
 			\textcolor{dark-blue}{ \textbf{#1}}}\\
 		{\fontsize{12}{0}\selectfont
@@ -73,11 +73,10 @@
 			\cvContactSpace \faIcon{phone} \@mobile\\
    			\cvContactSpace \href{\@linkedin}{\faIcon{linkedin} LinkedIn}
 			\cvContactSpace \href{\@github}{\faIcon{github} GitHub}
-			\cvContactSpace \href{\@bitbucket}{\faIcon{bitbucket} Bitbucket}\\~{\Large \\~\\}
+			\cvContactSpace \href{\@bitbucket}{\faIcon{bitbucket} Bitbucket}\\ {\\}{\\}
             }
 	\end{center}
 }
-
 %	CV SECTION
 \newcommand{\cvSection}[1]{
 	{\textcolor{dark-blue}{\texttt{\Huge{\firstLetter#1@}\LARGE{\secondLetter#1@}} \hrulefill}}\\~\\
