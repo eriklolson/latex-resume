@@ -7,19 +7,17 @@
     twoside = false,
 ]{article}
 \usepackage{resume-styles}
-\usepackage[dvipsnames]{xcolor}
-\definecolor{light-bluey}{RGB}{86, 114, 196}
+
 
 \begin{document}
 	%	Basic information	
-	\setname{Erik Olson}{}
+	\setname{\textcolor{dark-blue}{Erik Olson}}{\\}{\\}
 	\setaddress{5535 SE Madison St}
 	\setmobile{503.975.1208}
 	\setmail{eriklolson@zohomail.com}
 	\setlinkedin{https://www.linkedin.com/in/duck-2345/}
  	\setaddress{5535 SE Madison St}
 	\setgithub{https://github.com/duck2345}
-	
 	%---------------------------------------------------------------------------------------
 	%	Title + Contact
 	%----------------------------------------------------------------------------------------
@@ -30,7 +28,7 @@
 	\cvSection{Career Profile}
 	\CVTextBlock{Junior Python Web Developer with a strong foundation in Python programming, experience in building and deploying web applications using the Flask 						framework. Skilled in creating clean and maintainable code, working with relational databases, and integrating RESTful APIs. Passionate about developing innovative 		solutions to real-world problems and eager to continue learning and growing in a fast-paced environment.
 		This text will appear green-colored}
-%---------------------------------------------------------------------------------------
+	%---------------------------------------------------------------------------------------
 	%	Core Competencies
 	%----------------------------------------------------------------------------------------
 	\cvSection{Core Competencies}
@@ -67,8 +65,8 @@
       \item Debugged and solved production issues, improving application performance and stability
    \end{itemize}
    \begin{description}
-   \textcolor{light-bluey}
-    {\-\hspace{-.45cm}\textbf {Key Achievements:}}
+   \textcolor{light-blue}
+    {\-\hspace{-.45cm} \textbf{Key Achievements:}}
    \end{description}
    \begin{itemize}
       \item Created a back-end PostgreSQL database to store blog entries and user data
@@ -77,14 +75,15 @@
       \item Created an Ubuntu Virtual Server from scratch to host the website and configured Gunicorn WSGI server and Nginx reverse proxy
       \item Configured DNS settings and secured the website using Certbot
       \item Implemented Git-Flow process for local and remote applications, including creating, deleting, and merging release and feature branches with Git-Flow CLI
-      %\item Used a bug tracking system to track history of bugs and issues on everyday basis
+      \item Used a bug tracking system to track history of bugs and issues on everyday basis
       \item Developed eCommerce website with Flask, featuring mock wine shop inventory
       \item Implemented various functionalities like user account management, product search and view, shopping cart, order entry, and account history
-      \item  Wrote a web scraper (python-wine-scraper) to supply the back-end database with mock wine products
+      \item Wrote a web scraper (python-wine-scraper) to supply the back-end database with mock wine products
       \item Used Terraform to create a cloud-native Postgres database in an AWS Virtual Private Cloud
     \end{itemize}
     }
-	\CVBlockWithTime{ONLINE ENGLISH SECOND LANGUAGE TEACHER}{VIPKID}{}{2020 – 2021}
+    
+	\-\hspace{-.45cm}\CVBlockWithTime{ONLINE ENGLISH SECOND LANGUAGE TEACHER}{VIPKID}{}{2020 – 2021}
 	{
     \begin{itemize}
       \item Designed and delivered personalized language lessons to students of various age groups, levels, and backgrounds through virtual platforms

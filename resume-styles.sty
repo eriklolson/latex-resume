@@ -47,13 +47,13 @@
 \def\firstLetter#1#2@{#1}
 \def\secondLetter#1#2@{#2}
 \newcommand\tab[1][.9cm]{\hspace*{#1}}
-\newcommand{\cvContactSpace}{\quad\textcolor{dark-blue}{$\bullet$}\quad}
+\newcommand{\cvContactSpace}{\quad\textcolor{dark-blue}{$\bullet$}\setlength{\topsep}{3pt}\quad}
 \newcommand{\cvContactSep}{\textcolor{dark-blue}{\textbf{|}} }
 %============================================================================%
 %	CV COMMANDS
 %============================================================================%
 %	SETTING UP INFO
-\newcommand*{\setname}[2]{\def\@firstname{#1}\def\@lastname{#2}}
+\newcommand*{\setname}[3]{\def\@firstname{#1}\def\@lastname{#2\\}{#3\\}}
 \newcommand*{\setaddress}[1]{\def\@address{#1}}
 \newcommand*{\setmobile}[1]{\def\@mobile{#1}}
 \newcommand*{\setposition}[1]{\def\@position{#1}}
@@ -64,7 +64,7 @@
 %	CV TITLE
 \newcommand{\cvtitle}[1]{
 	\begin{center}
-		{\fontsize{27}{0}\selectfont
+		{\fontsize{37}{0}\selectfont
 			\texttt{\@firstname \ {\color{dark-blue}{\@lastname}} }
 			\textcolor{dark-blue}{ \textbf{#1}}}\\
 		{\fontsize{12}{0}\selectfont
@@ -77,13 +77,14 @@
             }
 	\end{center}
 }
+
 %	CV SECTION
 \newcommand{\cvSection}[1]{
 	{\textcolor{dark-blue}{\texttt{\Huge{\firstLetter#1@}\LARGE{\secondLetter#1@}} \hrulefill}}\\~\\
 }
 %	 CV Block with date/time
 \newcommand{\CVBlockWithTime}[5]{
-	\tab \texttt{\Large {\textcolor{blue}{\textbf{#1}}}} \hfill \textbf{\large #2}\\
+	\tab \texttt{\Large {\textcolor{light-blue}{\textbf{#1}}}} \hfill \textbf{\large #2}\\
 	\tab \textbf{#3} \hfill #4\\
 	\ifthenelse{\isempty{#5}}{\\}{\tab \begin{minipage}{14cm}#5\end{minipage}\\~\\}
 }
