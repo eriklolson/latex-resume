@@ -19,8 +19,9 @@
 ]
 \RequirePackage[a4paper]{geometry}						% define page styles using geometry
 \geometry{top=1.4cm, bottom=1.4cm, left=1cm, right=1cm}	% remove all possible margins
+\usepackage[dvipsnames]{xcolor}
 \RequirePackage{color}
-\definecolor{red}{RGB}{30, 58, 138}
+\definecolor{blue}{RGB}{30, 58, 138}
 \definecolor{black}{RGB}{23, 23, 23}
 \definecolor{gray}{RGB}{147, 147, 147}
 \RequirePackage[pdfusetitle,
@@ -30,7 +31,7 @@
 	colorlinks		= true,			% Set text color
 	anchorcolor		= black,		% Anchor text
 	menucolor		= black,		% Acrobat-menu
-	urlcolor		= red			% Reference to internet links 
+	urlcolor		= black			% Reference to internet links 
 ]{hyperref}							% Hyperlink
 \RequirePackage{fancyhdr, lastpage}	% Paging style
 \pagestyle{fancy}
@@ -45,8 +46,8 @@
 \def\firstLetter#1#2@{#1}
 \def\secondLetter#1#2@{#2}
 \newcommand\tab[1][.9cm]{\hspace*{#1}}
-\newcommand{\cvContactSpace}{\quad\textcolor{red}{$\bullet$}\quad}
-\newcommand{\cvContactSep}{\textcolor{red}{\textbf{|}} }
+\newcommand{\cvContactSpace}{\quad\textcolor{}{$\bullet$}\quad}
+\newcommand{\cvContactSep}{\textcolor{}{\textbf{|}} }
 %============================================================================%
 %	CV COMMANDS
 %============================================================================%
@@ -63,8 +64,8 @@
 \newcommand{\cvtitle}[1]{
 	\begin{center}
 		{\fontsize{27}{0}\selectfont
-			\texttt{\@firstname \ {\color{gray}{\@lastname}} }
-			\textcolor{red}{ \textbf{#1}}}\\
+			\texttt{\@firstname \ {\color{blue}{\@lastname}} }
+			\textcolor{blue}{ \textbf{#1}}}\\
 		{\fontsize{12}{0}\selectfont
 			\cvContactSpace \href{mailto:\@mail}{\faIcon{envelope} \@mail}
 			\cvContactSpace  \faIcon{map} \@address
@@ -78,7 +79,7 @@
 %	CV SECTION
 \newcommand{\cvSection}[1]{
 	
-	{\textcolor{red}{\texttt{\Huge{\firstLetter#1@}\LARGE{\secondLetter#1@}} \hrulefill}}\\~\\
+	{\textcolor{blue}{\texttt{\Huge{\firstLetter#1@}\LARGE{\secondLetter#1@}} \hrulefill}}\\~\\
 }
 %	 CV Block with date/time
 \newcommand{\CVBlockWithTime}[5]{
